@@ -4,10 +4,12 @@ PolishedCode_MachineLearning
 Coordinate Descent Algorithm with Elastic Net Regularization
 --------------------------------------------------------------
 
-This is a polished code example of  my own implementation of a Coordinate Descent Algorithm with Elastic Net 
-Regularization.  
+This is a polished code example of my own implementation of a Coordinate Descent Algorithm with Elastic Net 
+Regularization used for solving least-squares regression for the minimization problem seen below:  
 
-This was done as part of my DATA 558 Machine Learning course at the University of Washington.
+<img src=https://github.com/samirpdx/PolishedCode_MachineLearning/blob/master/images/elasticnet.JPG width="600" height="80" />
+
+This package was created as a part of my DATA 558 Machine Learning course at the University of Washington.
 
 For examples of implementation, please see 
 the [examples](https://github.com/samirpdx/PolishedCode_MachineLearning/tree/master/examples) folder.  
@@ -21,15 +23,18 @@ Directory Structure
 ---------------------
 ```
 PolishedCode_MachineLearning/
-  |- src/
-     |- __init__.py
-     |- myelasticnet.py
+
   |- examples/
      |- __init__.py
      |- README.md
      |- Polished Code - ElasticNet (Comparison with Sci-Kit Learn).ipynb
      |- Polished Code - ElasticNet (Real-World Example).ipynb
      |- Polished Code - ElasticNet (Simulated Example).ipynb
+  |- images/
+     |- elasticnet.jpg
+  |- src/
+     |- __init__.py
+     |- myelasticnet.py
   |- README.md
   |- setup.py
 ```
