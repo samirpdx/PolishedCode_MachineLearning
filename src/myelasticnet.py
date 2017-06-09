@@ -281,7 +281,8 @@ def randcoorddescent(beta, alpha, lamb, x_data, y_data, max_iter=1000, eps=1e-7)
         new_beta[j] = partial_min(j, new_beta, alpha, lamb, x, y)
         if np.remainder(t, p) == 0:
             beta_out.append(np.array(new_beta))
-            if t > 3:
+            #Requiring a minimum of 500 iterations for descent to avoid early convergence triggering
+            if t > 500:
                 bdelta = np.abs(np.linalg.norm(beta_out[-2]) - np.linalg.norm(beta_out[-1]))
         t += 1
 
