@@ -7,7 +7,7 @@ Coordinate Descent Algorithm with Elastic Net Regularization
 This is a polished code example of my own implementation of a Coordinate Descent Algorithm with Elastic Net 
 Regularization used for solving least-squares regression for the minimization problem seen below:  
 
-<img src=https://github.com/samirpdx/PolishedCode_MachineLearning/blob/master/images/elasticnet.JPG width="600" height="80" />
+<img src=https://github.com/samirpdx/PolishedCode_MachineLearning/blob/master/images/elasticnet.JPG/>
 
 This package was created as a part of my DATA 558 Machine Learning course at the University of Washington.
 
