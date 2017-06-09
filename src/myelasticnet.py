@@ -374,7 +374,9 @@ def cross_val(lamb_list, folds, x_data, y_data):
 
     X = np.array(x_data)
     Y = np.array(y_data)
-    beta = beta_zero
+    n = X.shape[0]
+    p = X.shape[1]
+    beta = np.zeros(p)
     mse_list = []
 
     kf = KFold(n_splits=folds, random_state=None, shuffle=False)
