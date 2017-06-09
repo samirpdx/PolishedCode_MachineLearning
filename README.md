@@ -46,10 +46,10 @@ In a directory on your local machine, run the following `git` command in the bas
 git clone https://github.com/samirpdx/PolishedCode_MachineLearning.git
 ```
 
-Then in the bash terminal go to the `src` folder in the newly installed package folder:
+Then in the bash terminal go to the the newly installed package folder:
 
 ```
-cd PolishedCode_MachineLearning/src/
+cd PolishedCode_MachineLearning/
 ```
 
 And install the package by running the `setup.py` file:
