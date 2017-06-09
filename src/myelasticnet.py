@@ -17,7 +17,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 import copy
-import time
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import ElasticNetCV, ElasticNet
 from sklearn.model_selection import KFold
@@ -281,7 +280,7 @@ def randcoorddescent(beta, alpha, lamb, x_data, y_data, max_iter=1000, eps=1e-7)
         new_beta[j] = partial_min(j, new_beta, alpha, lamb, x, y)
         if np.remainder(t, p) == 0:
             beta_out.append(np.array(new_beta))
-            #Requiring a minimum of 500 iterations for descent to avoid early convergence triggering
+            # Requiring a minimum of 500 iterations to premature convergence
             if t > 500:
                 bdelta = np.abs(np.linalg.norm(beta_out[-2]) - np.linalg.norm(beta_out[-1]))
         t += 1
@@ -442,7 +441,7 @@ def runcompareCV(lamb_list, alpha, folds, X_data, Y_data):
     """
 
     # Running hand implemented algorithm with cross-validation
-    cv_mse = cross_val(lamb_list, folds, X_data, Y_data )
+    cv_mse = cross_val(lamb_list, folds, X_data, Y_data)
 
     # Running SKLearn algorithm with cross-validation
     encv = ElasticNetCV(alphas=lamb_list, l1_ratio=alpha, fit_intercept=False, max_iter=10000)
