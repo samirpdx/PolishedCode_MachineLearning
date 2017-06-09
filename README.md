@@ -10,11 +10,11 @@ Regularization.
 This was done as part of my DATA 558 Machine Learning course at the University of Washington.
 
 For examples of implementation, please see 
-the[examples](https://github.com/samirpdx/PolishedCode_MachineLearning/tree/master/examples)folder.  
+the [examples](https://github.com/samirpdx/PolishedCode_MachineLearning/tree/master/examples) folder.  
 No data files are required for download, as they are downloaded into the notebook via URLs.
 
 For viewing the raw Python code for this implementation, please refer 
-to[myelasticnet.py](https://github.com/samirpdx/PolishedCode_MachineLearning/blob/master/src/myelasticnet.py) 
+to [myelasticnet.py](https://github.com/samirpdx/PolishedCode_MachineLearning/blob/master/src/myelasticnet.py) 
 
 Directory Structure
 ---------------------
